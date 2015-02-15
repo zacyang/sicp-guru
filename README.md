@@ -1,5 +1,5 @@
 # sicp-guru
-https://travis-ci.org/zacyang/sicp-guru.svg
+[![Build Status](https://travis-ci.org/zacyang/sicp-guru.svg)](https://travis-ci.org/zacyang/sicp-guru)
 
 A Clojure service evaluate the remote posted code and return a result.
 
