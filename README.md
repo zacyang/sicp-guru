@@ -1,10 +1,12 @@
 # sicp-guru
+https://travis-ci.org/zacyang/sicp-guru.svg
 
-A Clojure library designed to ... well, that part is up to you.
+A Clojure service evaluate the remote posted code and return a result.
 
 ## Usage
 
-FIXME
+## TODO list
+* blabla
 
 ## License
 
