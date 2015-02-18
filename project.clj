@@ -10,6 +10,7 @@
                  [ring/ring-json "0.3.1"]]
   :plugins [[lein-ring "0.9.1"]
             [cider/cider-nrepl "0.8.2"]]
+  :ring {:handler guru.core/app}
   :profiles {:dev 
              {:dependencies [[ring-mock "0.1.5"]]}}
   )

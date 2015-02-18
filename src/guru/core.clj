@@ -1,10 +1,13 @@
 (ns  guru.core
-  ^{:author yangyang}
-  (:require [guru.route :as route]
-            [ring.middleware.json :as json]
-            [compojure.handler :as handler]
+    (:require [guru.route :refer :all]
+              [ring.middleware.json :as json]
+              [compojure.handler :as handler]
             ))
 
 
-(def ^:private app
-  (-> (handler/site route/app-routes)))
+(def app
+  (-> (handler/site app-routes)
+      (json/wrap-json-body)
+      (json/wrap-json-response)))
+
+
