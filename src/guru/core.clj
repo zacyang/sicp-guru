@@ -1,4 +1,4 @@
-(ns guru.core
+(ns  guru.core
   (:require [compojure.core :refer :all]
             [compojure.route :as route]))
 
