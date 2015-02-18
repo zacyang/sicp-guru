@@ -1,9 +1,10 @@
 (ns  guru.core
-  (:require [compojure.core :refer :all]
-            [compojure.route :as route]))
+  ^{:author yangyang}
+  (:require [guru.route :as route]
+            [ring.middleware.json :as json]
+            [compojure.handler :as handler]
+            ))
 
 
-(defroutes app-routes
-  (GET "/" [] "hello")
-  (route/not-found "not found")
-)
+(def ^:private app
+  (-> (handler/site route/app-routes)))

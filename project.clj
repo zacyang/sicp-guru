@@ -6,7 +6,10 @@
   :dependencies [[org.clojure/clojure "1.6.0"]
                  [compojure "1.3.1"]
                  [ring/ring-core "1.3.2"]
-                 [ring/ring-jetty-adapter "1.3.2"]]
+                 [ring/ring-jetty-adapter "1.3.2"]
+                 [ring/ring-json "0.3.1"]]
   :plugins [[lein-ring "0.9.1"]
             [cider/cider-nrepl "0.8.2"]]
+  :profiles {:dev 
+             {:dependencies [[ring-mock "0.1.5"]]}}
   )
